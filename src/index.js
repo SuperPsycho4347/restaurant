@@ -1,13 +1,8 @@
-// console.log("Apollo
-let init = 0
+import { homeLoad } from "./about"
 
-function increaseInit() {
-    init = init + 1
-}
+document.onload = populateHome()
 
-document.onload = increaseInit()
-
-if (init > 0) {
+function populateHome() {
     const docWhole = document.querySelector("#content")
 
     const restHead = document.createElement('h1')
@@ -19,3 +14,18 @@ if (init > 0) {
     docWhole.appendChild(restHead)
     docWhole.appendChild(restPara)
 }
+
+const aboutBtn = document.querySelector('.about')
+const homeBtn = document.querySelector('.home')
+
+aboutBtn.addEventListener('click', (e) => {
+    // console.log("EAT CHEETOES")
+    homeLoad()
+} )
+
+homeBtn.addEventListener('click', (e) => {
+    const docWhole = document.querySelector('#content')
+    docWhole.innerHTML= ""
+    
+    populateHome()
+})
