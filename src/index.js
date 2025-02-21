@@ -1,4 +1,5 @@
 import { homeLoad } from "./about"
+import "./style.css"
 
 document.onload = populateHome()
 
@@ -26,6 +27,6 @@ aboutBtn.addEventListener('click', (e) => {
 homeBtn.addEventListener('click', (e) => {
     const docWhole = document.querySelector('#content')
     docWhole.innerHTML= ""
-    
+
     populateHome()
 })
