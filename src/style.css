@@ -2,4 +2,24 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(anastasiya-osichkina-leblancrgb-color-fin2.jpg);
+    display: flex;
+    flex-direction: column;
+    font-family: Bebas Neue, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.2rem;
+    margin-right: 4rem;
+    gap: 1rem;
+}
+
+button {
+    border-radius: 1rem;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    text-align: center;
+    width: 100px;
+    height: 60px;
 }

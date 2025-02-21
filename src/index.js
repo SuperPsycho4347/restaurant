@@ -7,7 +7,7 @@ function populateHome() {
     const docWhole = document.querySelector("#content")
 
     const restHead = document.createElement('h1')
-    restHead.textContent = "Lotus Restaurant"
+    restHead.textContent = "Welcome to Cafe Leblanc!"
 
     const restPara = document.createElement('p')
     restPara.textContent = "The best Oriental food in town, in a convenient location. Open 24/7."
