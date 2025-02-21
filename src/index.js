@@ -4,16 +4,17 @@ import "./style.css"
 document.onload = populateHome()
 
 function populateHome() {
-    const docWhole = document.querySelector("#content")
+    const docNav = document.querySelector("header")
 
     const restHead = document.createElement('h1')
+    restHead.classList = 'h1-head'
     restHead.textContent = "Welcome to Cafe Leblanc!"
 
     const restPara = document.createElement('p')
     restPara.textContent = "The best Oriental food in town, in a convenient location. Open 24/7."
 
-    docWhole.appendChild(restHead)
-    docWhole.appendChild(restPara)
+    docNav.appendChild(restHead)
+    // docWhole.appendChild(restPara)
 }
 
 const aboutBtn = document.querySelector('.about')
@@ -25,8 +26,11 @@ aboutBtn.addEventListener('click', (e) => {
 } )
 
 homeBtn.addEventListener('click', (e) => {
-    const docWhole = document.querySelector('#content')
-    docWhole.innerHTML= ""
+    const doc = document.querySelector('#content')
+    doc.innerHTML = ""
+    
+    const docWhole = document.querySelector('.h1-head')
+    docWhole.textContent = ""
 
-    populateHome()
+    docWhole.textContent = "Welcome to Cafe Leblanc!"
 })

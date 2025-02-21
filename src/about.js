@@ -3,7 +3,7 @@ function homeLoad() {
     docWhole.innerHTML= ""
 
     const aboutHead = document.createElement('h2')
-    aboutHead.textContent = "Run By: Ben & Jerry Ent."
+    aboutHead.textContent = "Lovingly crafted by: Sojiro & Futaba"
 
     docWhole.appendChild(aboutHead)
 }
